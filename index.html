@@ -1,245 +1,302 @@
-<!doctype html>
-<html lang="pt-br">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="css/blog.css">
-    <title>Blog</title>
+    <title>Projeto Aquabeta</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Lora:wght@600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
-    <!-- navbar start -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
-        <a class="navbar-brand" href="#">Blog</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Sobre</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contato</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Notificações</a>
-                </li>
-            </ul>
-            <!--  <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2 rounded-0" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success rounded-0 my-2 my-sm-0" type="submit">Search</button>
-            </form> -->
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" role="status"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid fixed-top px-0 wow fadeIn" data-wow-delay="0.1s">
+        <nav class="navbar navbar-expand-lg navbar-light py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+            <a href="blog.html" class="navbar-brand ms-4 ms-lg-0">
+                <h1 class="fw-bold text-primary m-0">Blog</h1>
+            </a>
+            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto p-4 p-lg-0">
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="about.html" class="nav-item nav-link">Sobre</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 mb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="w-100" src="img/aquario.jpg" alt="Image">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row justify-content-start">
+                                <div class="col-lg-7">
+                                    <h1 class="display-2 mb-5 animated slideInDown">Projeto Aquabeta - aquário
+                                        monitorizado</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-    </nav>
-    <!-- navbar ends -->
-    <!-- main content start  -->
-    <div class="container mt-5">
-        <div class="row main-section">
-            <div class="col-sm-12 col-md-9 col-lg-9">
+    </div>
+    <!-- Carousel End -->
 
 
-                <div class="card rounded-0 shadow-sm">
-                    <div class="card-header">
-                        <span>Por</span>
-                        <span class="text-success"> Fernando</span>
-                        <span>em</span>
-                        <span class="text-success"> 27 Maio 2023</span>
+    <!-- About Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="about-img position-relative overflow-hidden p-5 pe-0">
+                        <img class="img-fluid w-100" src="img/sketch.jpg">
                     </div>
-                    <div class="card-body">
-                        <img class="card-img-top" src="img/cronograma3.png" alt="bootstrap simple blog">
-                        <hr>
-                        <h2 class="card-title">Cronograma atualizado 3</h2>
-                        <p class="card-text">Cronograma atualizado</p>
-                        <!-- <a href="blog-post.html" class="btn btn-primary">Read more</a> -->
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                    <h1 class="display-5 mb-4">Monitorização de um aquário para peixes</h1>
+                    <p class="mb-4">O projeto tem como objetivo a monitorização, automação e inputs manuais via IOT de
+                        um aquário para peixes.
+                    </p>
+                    <p><i class="fa fa-check text-primary me-3"></i>Sensores</p>
+                    <p><i class="fa fa-check text-primary me-3"></i>Alimentador</p>
+                    <p><i class="fa fa-check text-primary me-3"></i>IOT</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Feature Start -->
+    <div class="container-fluid bg-light bg-icon my-5 py-6">
+        <div class="container">
+            <div class="section-header text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s"
+                style="max-width: 500px;">
+                <h1 class="display-5 mb-3">Objetivos</h1>
+                <p>O que nós planejamos implementar no aquário de features</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="bg-white text-center h-100 p-4 p-xl-5">
+                        <img class="img-fluid mb-4" src="img/sensor.jpg" alt="">
+                        <h4 class="mb-3">Sensores</h4>
+                        <p class="mb-4">pH, temperatura, nível de água</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="bg-white text-center h-100 p-4 p-xl-5">
+                        <img class="img-fluid mb-4" src="img/apple.png" alt="">
+                        <h4 class="mb-3">inputs Manuais</h4>
+                        <p class="mb-4">Alimentador e troca d'água parcial</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="bg-white text-center h-100 p-4 p-xl-5">
+                        <img class="img-fluid mb-4" src="img/iot.png" alt="">
+                        <h4 class="mb-3">IOT</h4>
+                        <p class="mb-4">Integração com IOT Blynk ou webservice</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Feature End -->
+
+    <!-- Blog Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="section-header text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s"
+                style="max-width: 500px;">
+                <h1 class="display-5 mb-3">Atualizações</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <img class="img-fluid" src="img/cronograma2.png" alt="">
+                    <div class="bg-light p-4">
+                        <a class="d-block h5 lh-base mb-4" href="img/cronograma2.png" target="_blank">cronograma3</a>
+                        <p class="mb-4">Mais atrasos devido a doença de um dos membros</p>
+                        <div class="text-muted border-top pt-4">
+                            <small class="me-3"><i class="fa fa-user text-primary me-2"></i>Fernando</small>
+                            <small class="me-3"><i class="fa fa-calendar text-primary me-2"></i>27 Maio, 2023</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <img class="img-fluid" src="img/statechart.jpg" alt="">
+                    <div class="bg-light p-4">
+                        <a class="d-block h5 lh-base mb-4" href="img/statechart.jpg" target="_blank">Statechart de
+                            software</a>
+                        <p class="mb-4">Statechart da lógica do firmware</p>
+                        <div class="text-muted border-top pt-4">
+                            <small class="me-3"><i class="fa fa-user text-primary me-2"></i>Fernando</small>
+                            <small class="me-3"><i class="fa fa-calendar text-primary me-2"></i>27 Maio, 2023</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <img class="img-fluid" src="img/cronograma2.png" alt="">
+                    <div class="bg-light p-4">
+                        <a class="d-block h5 lh-base mb-4" href="img/cronograma2.png" target="_blank">Cronograma
+                            atualizado</a>
+                        <p class="mb-4">Atrasos devido a desistencia de um dos membros e doença de outro</p>
+                        <div class="text-muted border-top pt-4">
+                            <small class="me-3"><i class="fa fa-user text-primary me-2"></i>Fernando</small>
+                            <small class="me-3"><i class="fa fa-calendar text-primary me-2"></i>14 Maio, 2023</small>
+                        </div>
                     </div>
                 </div>
 
-
-                <div class="card rounded-0 shadow-sm">
-                    <div class="card-header">
-                        <span>Por</span>
-                        <span class="text-success"> Fernando</span>
-                        <span>em</span>
-                        <span class="text-success"> 27 Maio 2023</span>
-                    </div>
-                    <div class="card-body">
-                        <img class="card-img-top" src="img/statechart.png" alt="bootstrap simple blog">
-                        <hr>
-                        <h2 class="card-title">Statechart de software</h2>
-                        <p class="card-text">Diagrama de blocos de estado para o firmware do projeto</p>
-                        <!-- <a href="blog-post.html" class="btn btn-primary">Read more</a> -->
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <img class="img-fluid" src="img/esquematico.jpg" alt="">
+                    <div class="bg-light p-4">
+                        <a class="d-block h5 lh-base mb-4" href="img/esquematico.jpg" target="_blank">Esquemático de
+                            hardware
+                        </a>
+                        <p class="mb-4">Esquematico de hardware do projeto</p>
+                        <div class="text-muted border-top pt-4">
+                            <small class="me-3"><i class="fa fa-user text-primary me-2"></i>Fernando</small>
+                            <small class="me-3"><i class="fa fa-calendar text-primary me-2"></i>09 Mar, 2023</small>
+                        </div>
                     </div>
                 </div>
-
-
-                <div class="card rounded-0 shadow-sm">
-                    <div class="card-header">
-                        <span>Por</span>
-                        <span class="text-success"> Fernando</span>
-                        <span>em</span>
-                        <span class="text-success"> 14 Maio 2023</span>
-                    </div>
-                    <div class="card-body">
-                        <img class="card-img-top" src="img/cronograma2.png" alt="bootstrap simple blog">
-                        <hr>
-                        <h2 class="card-title">Cronograma atualizado</h2>
-                        <p class="card-text">Cronograma atualizado devido a imprevistos como a desistência de um dos
-                            membros e impossibilidade de trabalho por causa de problemas de saúde.</p>
-                        <!-- <a href="blog-post.html" class="btn btn-primary">Read more</a> -->
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <img class="img-fluid" src="img/organograma.jpg" alt="">
+                    <div class="bg-light p-4">
+                        <a class="d-block h5 lh-base mb-4" href="img/organograma.jpg" target="_blank">Diagrama de
+                            blocos</a>
+                        <p class="mb-4">Diagrama em blocos em organograma da lógica do projeto.
+                        </p>
+                        <div class="text-muted border-top pt-4">
+                            <small class="me-3"><i class="fa fa-user text-primary me-2"></i>Fernando</small>
+                            <small class="me-3"><i class="fa fa-calendar text-primary me-2"></i>09 Mar, 2023</small>
+                        </div>
                     </div>
                 </div>
-
-
-                <div class="card rounded-0 shadow-sm">
-                    <div class="card-header">
-                        <span>Por</span>
-                        <span class="text-success"> Fernando</span>
-                        <span>em</span>
-                        <span class="text-success"> 14 Maio 2023</span>
-                    </div>
-                    <div class="card-body">
-                        <img class="card-img-top" src="img/esquematico.png" alt="bootstrap simple blog">
-                        <hr>
-                        <h2 class="card-title">Esquemático de hardware</h2>
-                        <p class="card-text">Esquemático organizacional do HW do projeto.</p>
-                        <!-- <a href="blog-post.html" class="btn btn-primary">Read more</a> -->
-                    </div>
-                </div>
-
-
-                <div class="card rounded-0 shadow-sm">
-                    <div class="card-header">
-                        <span>Por</span>
-                        <span class="text-success"> Fernando</span>
-                        <span>em</span>
-                        <span class="text-success"> 14 Maio 2023</span>
-                    </div>
-                    <div class="card-body">
-                        <img class="card-img-top" src="img/organograma.jpg" alt="bootstrap simple blog">
-                        <hr>
-                        <h2 class="card-title">Diagrama de blocos</h2>
-                        <p class="card-text">Diagrama em blocos em organograma da lógica do projeto.</p>
-                        <!-- <a href="blog-post.html" class="btn btn-primary">Read more</a> -->
-                    </div>
-                </div>
-
-
-                <div class="card rounded-0 shadow-sm">
-                    <div class="card-header">
-                        <span>Por</span>
-                        <span class="text-success"> Drisana</span>
-                        <span>em</span>
-                        <span class="text-success"> 09 Maio 2023</span>
-                    </div>
-                    <div class="card-body">
-                        <img class="card-img-top" src="img/sensor_ph.jpeg" alt="bootstrap simple blog">
-                        <hr>
-                        <h2 class="card-title">Teste do sensor pH</h2>
-                        <p class="card-text">Teste do sensor pH na Tiva. Por enquanto ainda não há integração com outros
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <img class="img-fluid" src="img/sensor_ph.jpeg" alt="">
+                    <div class="bg-light p-4">
+                        <a class="d-block h5 lh-base mb-4" href="img/sensor_ph.jpeg" target="_blank">Teste do sensor
+                            pH</a>
+                        <p class="mb-4">PTeste do sensor pH na Tiva. Por enquanto ainda não há integração com outros
                             componentes como o alimentador, portanto aqui fora somente feito e verificado os valores
                             pelo monitor serial.</p>
-                        <!-- <a href="blog-post.html" class="btn btn-primary">Read more</a> -->
+
+                        <div class="text-muted border-top pt-4">
+                            <small class="me-3"><i class="fa fa-user text-primary me-2"></i>Drisana</small>
+                            <small class="me-3"><i class="fa fa-calendar text-primary me-2"></i>09 Mar, 2023</small>
+                        </div>
                     </div>
                 </div>
-
-                <div class="card rounded-0 shadow-sm">
-                    <div class="card-header">
-                        <span>Por</span>
-                        <span class="text-success"> Fernando Itiro</span>
-                        <span>em</span>
-                        <span class="text-success"> 09 Maio 2023</span>
-                    </div>
-                    <div class="card-body">
-                        <img class="card-img-top" src="img/motor_passo.jpeg" alt="bootstrap simple blog">
-                        <hr>
-                        <h2 class="card-title">Protótipo alimentador</h2>
-                        <p class="card-text">Protótipo do alimentador de ração de peixe. O mesmo é acionado via motor de
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <img class="img-fluid" src="img/alimentador.jpg" alt="">
+                    <div class="bg-light p-4">
+                        <a class="d-block h5 lh-base mb-4" href="img/alimentador.jpg" target="_blank">Protótipo
+                            alimentador</a>
+                        <p class="mb-4">Protótipo do alimentador de ração de peixe. O mesmo é acionado via motor de
                             passo, o qual será programado para despachar uma porção adequada de comida.</p>
-                        <!-- <a href="blog-post.html" class="btn btn-primary">Read more</a> -->
+                        <div class="text-muted border-top pt-4">
+                            <small class="me-3"><i class="fa fa-user text-primary me-2"></i>Fernando</small>
+                            <small class="me-3"><i class="fa fa-calendar text-primary me-2"></i>09 Mar, 2023</small>
+                        </div>
                     </div>
                 </div>
-
-                <div class="card rounded-0 shadow-sm">
-                    <div class="card-header">
-                        <span>Por</span>
-                        <span class="text-success"> Fernando Itiro</span>
-                        <span>em</span>
-                        <span class="text-success"> 09 Mar 2023</span>
-                    </div>
-                    <div class="card-body">
-                        <img class="card-img-top" src="img/cronograma.png" alt="bootstrap simple blog">
-                        <hr>
-                        <h2 class="card-title">Cronograma</h2>
-                        <p class="card-text">A imagem mostra o cronograma planejado ao longo do semestre para a
-                            realização do projeto e entrega final em 6 de junho de 2023.</p>
-                        <!-- <a href="blog-post.html" class="btn btn-primary">Read more</a> -->
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <img class="img-fluid" src="img/cronograma.jpg" alt="">
+                    <div class="bg-light p-4">
+                        <a class="d-block h5 lh-base mb-4" href="img/cronograma.jpg" target="_blank">Cronograma</a>
+                        <p class="mb-4">A imagem mostra o cronograma planejado ao longo do semestre para a realização do
+                            projeto e entrega final em 6 de junho de 2023.</p>
+                        <div class="text-muted border-top pt-4">
+                            <small class="me-3"><i class="fa fa-user text-primary me-2"></i>Fernando</small>
+                            <small class="me-3"><i class="fa fa-calendar text-primary me-2"></i>09 Mar, 2023</small>
+                        </div>
                     </div>
                 </div>
-                <!-- second post  -->
-                <div class="card rounded-0 shadow-sm">
-                    <div class="card-header">
-                        <span>Por</span>
-                        <span class="text-success"> Fernando Itiro</span>
-                        <span>em</span>
-                        <span class="text-success"> 09 Mar 2023</span>
-                    </div>
-                    <div class="card-body">
-                        <img class="card-img-top" src="img/aquario.png" alt="bootstrap simple blog">
-                        <hr>
-                        <h2 class="card-title">Introdução - Projeto AquaBeta</h2>
-                        <p class="card-text">AquaBeta é um projeto para a disciplina de Oficina de Integração 2 de
-                            Engenharia Eletrônica na UTFPR- Curitiba.
-                            O mesmo tem o objetivo de projeto um ambiente monitorado para a vivência de um peixe, o qual
-                            requer níveis apropriados de temperatura, PH, e alimentação.
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <img class="img-fluid" src="img/aquario.jpg" alt="">
+                    <div class="bg-light p-4">
+                        <a class="d-block h5 lh-base mb-4" href="">Introdução</a>
+                        <p class="mb-4">AquaBeta é um projeto para a disciplina de Oficina de Integração 2 de Engenharia
+                            Eletrônica na UTFPR- Curitiba. O mesmo tem o objetivo de projeto um ambiente monitorado para
+                            a vivência de um peixe, o qual requer níveis apropriados de temperatura, PH, e alimentação.
                         </p>
-                        <!-- <a href="blog-post.html" class="btn btn-primary">Read more</a> -->
+                        <div class="text-muted border-top pt-4">
+                            <small class="me-3"><i class="fa fa-user text-primary me-2"></i>Fernando</small>
+                            <small class="me-3"><i class="fa fa-calendar text-primary me-2"></i>09 Mar, 2023</small>
+                        </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+    <!-- Blog End -->
 
-                <!--    <div class="col-sm-12 col-md-3 col-lg-3">
-                <div class="card rounded-0 shadow-sm">
-                    <div class="card-header">
-                        Category
-                    </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item"><a href="#">Social</a></li>
-                        <li class="list-group-item"><a href="#">Sports</a></li>
-                        <li class="list-group-item"><a href="#">Technology</a></li>
-                        <li class="list-group-item"><a href="#">Trend's</a></li>
-                        <li class="list-group-item"><a href="#">Samsung</a></li>
-                    </ul>
-                    <div class="card-footer">
-                        <span class="text-info"> Ads will be goes here</span>
-                    </div>
-                </div>
-            </div>
-        </div>  -->
-            </div>
-            <!-- main content ends -->
-            <div class="footer-section mt-5">
-                <p class="text-center m-0 text-white">2018 © Copyright by Bootcatch.com</p>
-            </div>
-            <!-- Optional JavaScript -->
-            <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-                integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-                crossorigin="anonymous"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-                integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-                crossorigin="anonymous"></script>
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-                integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-                crossorigin="anonymous"></script>
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i
+            class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
 </body>
 
 </html>
